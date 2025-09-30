@@ -947,3 +947,15 @@ hr {
 .block-728{display:flex;justify-content:center;align-items:center;margin-bottom:10px;border-radius:10px;margin-top:10px}
 .block-300{display:none}
 }
+ul.unstyled.tips-and-tricks{list-style:none;padding:0;margin:30px auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px;max-width:1200px}
+ul.unstyled.tips-and-tricks li{background:#f8f5ef;border-radius:10px;padding:16px;box-shadow:0 2px 6px #00000014;transition:transform .2s ease,box-shadow .2s ease;font-size:16px;line-height:1.5;color:#333}
+ul.unstyled.tips-and-tricks li:hover{transform:translateY(-4px);box-shadow:0 6px 12px #0000001f}
+@media (max-width: 600px) {
+ul.unstyled.tips-and-tricks{grid-template-columns:1fr}
+}
+@media (min-width: 601px) and (max-width: 992px) {
+ul.unstyled.tips-and-tricks{grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}
+}
+@media (min-width: 993px) {
+ul.unstyled.tips-and-tricks{grid-template-columns:repeat(auto-fit,minmax(180px,1fr))}
+}
